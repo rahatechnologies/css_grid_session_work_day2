@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #222;
+}
+.container{
+    /* min-height: 100vh; */
+    border: 5px solid red;
+    display: grid;
+    /* grid-template-columns: 105px 8rem 7em 10%; */
+    /* grid-template-columns: 30% 30% 25% auto; */
+    /* grid-template-columns: [col-1-start] 100px [col-1-end]  50px 100px [col-3-end];
+    grid-template-rows: [row-1-start] 100px 50px 100px [row-2-end]; */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px;
+    /* grid-template-areas: 
+            "a a b" 
+            "c c b"
+            "d d d"
+            "e f f"; */
+    /* column-gap: 10px;
+    row-gap: 25px; */
+    /* gap: 10px 20px; */
+    margin: 2rem;
+}
+.cell{
+    padding: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid rgb(255, 230, 0);
+    background-color: black;
+    color: white;
+}
+.cell_1{
+    background: green;
+    order: 2;
+    /* grid-area: a; */
+    /* grid-column: col-1-start/col-1-end;
+    grid-row: row-1-start/row-2-end ; */
+    
+}
+.cell_2{
+    background: orange;
+    order: -2;
+    /* grid-area: b; */
+    /* grid-column: col-1-start/col-3-end;
+    grid-row: row-1-start/row-2-end ; */
+}
+.cell_3{
+    background: blue;
+    /* grid-area: c; */
+}
+.cell_4{
+    background: purple;
+    order: -3;
+    /* grid-area: d; */
+}
+.cell_5{
+    background: turquoise;
+    order: -1;
+    /* grid-area: e; */
+}
+.cell_6{
+    background: grey;
+    /* grid-area: f; */
+}
